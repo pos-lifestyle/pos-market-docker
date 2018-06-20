@@ -2,6 +2,7 @@ FROM php:7.1.18-cli-stretch
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
+        git \
         libc-client-dev \
         libbz2-dev \
         libfreetype6-dev \
@@ -15,6 +16,10 @@ RUN apt-get update \
         libtidy-dev \
         libxml2-dev \
         libxslt1-dev \
+        mercurial \
+        openssh \
+        patch \
+        subversion \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
     && docker-php-ext-install -j"$(nproc)" \
