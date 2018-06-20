@@ -17,6 +17,8 @@ RUN apt-get update \
         libxml2-dev \
         libxslt1-dev \
         mercurial \
+        patch \
+        ssh-client \
         subversion \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
