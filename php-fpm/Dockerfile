@@ -85,17 +85,17 @@ RUN { \
     echo "xdebug.profiler_output_dir=\${XDEBUG_PROFILER_OUTPUT_DIR}"; \
     echo "xdebug.profiler_output_name=\${XDEBUG_PROFILER_OUTPUT_NAME}"; \
     echo; \
-    echo "register_globals=\$(PHP_CONFIG_REGISTER_GLOBALS)"; \
-    echo "allow_url_fopen=\$(PHP_CONFIG_ALLOW_URL_FOPEN)"; \
-    echo "allow_url_include=\$(PHP_CONFIG_ALLOW_URL_INCLUDE)"; \
-    echo "magic_quotes_gpc=\$(PHP_CONFIG_MAGIC_QUOTES_GPC)"; \
-    echo "expose_php=\$(PHP_CONFIG_EXPOSE_PHP)"; \
-    echo "mbstring.func_overload=\$(PHP_CONFIG_MBSTRING_FUNC_OVERLOAD)"; \
-    echo "memory_limit=\$(PHP_CONFIG_MEMORY_LIMIT)"; \
-    echo "max_execution_time=\$(PHP_CONFIG_MAX_EXECUTION_TIME)"; \
-    echo "upload_max_filesize=\$(PHP_CONFIG_UPLOAD_MAX_FILESIZE)"; \
-    echo "max_file_uploads=\$(PHP_CONFIG_MAX_FILE_UPLOADS)"; \
-    echo "max_input_vars=\$(PHP_CONFIG_MAX_INPUT_VARS)"; \
+    echo "register_globals=\${PHP_CONFIG_REGISTER_GLOBALS}"; \
+    echo "allow_url_fopen=\${PHP_CONFIG_ALLOW_URL_FOPEN}"; \
+    echo "allow_url_include=\${PHP_CONFIG_ALLOW_URL_INCLUDE}"; \
+    echo "magic_quotes_gpc=\${PHP_CONFIG_MAGIC_QUOTES_GPC}"; \
+    echo "expose_php=\${PHP_CONFIG_EXPOSE_PHP}"; \
+    echo "mbstring.func_overload=\${PHP_CONFIG_MBSTRING_FUNC_OVERLOAD}"; \
+    echo "memory_limit=\${PHP_CONFIG_MEMORY_LIMIT}"; \
+    echo "max_execution_time=\${PHP_CONFIG_MAX_EXECUTION_TIME}"; \
+    echo "upload_max_filesize=\${PHP_CONFIG_UPLOAD_MAX_FILESIZE}"; \
+    echo "max_file_uploads=\${PHP_CONFIG_MAX_FILE_UPLOADS}"; \
+    echo "max_input_vars=\${PHP_CONFIG_MAX_INPUT_VARS}"; \
 } | tee "${PHP_CONFDIR}/pos-market.ini"
 
 USER www-data:www-data
