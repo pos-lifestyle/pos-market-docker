@@ -1,4 +1,4 @@
-FROM mysql:5.7.22
+FROM mysql:5.7.24
 
 ENV MYSQL_CONFDIR /etc/mysql/conf.d
 

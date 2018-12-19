@@ -13,11 +13,10 @@ ENV APACHE_SERVER_NAME localhost
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-        apache2=2.4.25-3+deb9u4 \
-        curl=* \
+        apache2>=2.4.25 \
+        curl \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
-
 
 RUN { \
     echo "ServerName \${APACHE_SERVER_NAME}"; \
